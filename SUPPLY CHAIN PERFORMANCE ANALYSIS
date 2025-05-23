@@ -1,0 +1,25 @@
+import random
+
+#Sample data (simulate data for 12 months)
+
+months = 12
+
+orders_placed = [random.randint(80, 120) for in range(months)]
+
+orders_fulfilled = [min(placed, random.randint(70, 130)) for placed in orders_placed]
+
+lead_times = [round(random.uniform (2, 7), 2) for_in range(months)] # in days
+
+inventory_levels = [random.randint(1000, 2000) for in range(months)]
+
+sales [random.randint(900, 1900) for_in range(months)]
+
+# Analysis
+
+average_lead_time = sum(lead_times) / months
+
+order_fulfillment_rate = sum(orders_fulfilled) / sum(orders_placed) * 100
+
+average_inventory = sum(inventory_levels) / months.
+
+inventory_turnover = sum(sales) / average_inventory
